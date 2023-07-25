@@ -2,6 +2,11 @@
     <head>OpenRedirection
     <script>
          alert('hello')
+        const urlParams = new URLSearchParams(location.search);
+for (const [key, value] of urlParams) {
+    console.log(`${key}:${value}`);
+}
+
            var query = window.location.search.substring(1);
 var qs = parse_query_string(query);
 console.log(qs+" Is a cookie")
